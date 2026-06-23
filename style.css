@@ -29,3 +29,32 @@ img {
     margin-top: 20px;
     border-radius: 8px;        /* 画像の角を少し丸くする */
 }
+
+/* タイトルとメニューを横並びにする設定 */
+header {
+    display: flex;                  /* 横並びにする魔法の合言葉 */
+    justify-content: space-between; /* タイトルを左、メニューを右に離して配置 */
+    align-items: center;            /* 上下の高さを中央で揃える */
+    border-bottom: 2px solid #0066cc; /* 見出しの下線をheader全体に引く */
+    padding-bottom: 10px;           /* 下線との間の隙間 */
+}
+
+/* 横並びにするため、h1の元のデザインを少し調整 */
+h1 {
+    margin: 0;                      /* 余計な隙間をなくす */
+    border-bottom: none;            /* h1単体の下線は消す */
+    padding-bottom: 0;
+}
+
+/* メニュー内のリンクのデザイン */
+nav a {
+    margin-left: 20px;              /* メニューの項目同士の間に隙間を作る */
+    color: #333333;                 /* 文字の色を落ち着いた色に */
+    text-decoration: none;          /* 下線を消す */
+    font-weight: bold;
+}
+
+/* メニューのリンクにマウスを乗せたときの変化（お好みで） */
+nav a:hover {
+    color: #0066cc;                 /* マウスを乗せると青色に変わる */
+}
